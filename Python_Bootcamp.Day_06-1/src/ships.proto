@@ -1,0 +1,62 @@
+syntax = "proto2";
+
+message Spaceship {
+  enum AlignmentType {
+    ALLY = 0;
+    ENEMY = 1;
+  }
+  optional AlignmentType Alignment = 1;
+  optional string name = 2 [default = 'Unknown'];
+  optional float length = 3;
+  enum ClassType {
+    CORVETTE = 0;
+    FRIGATE = 1;
+    CRUISER = 2;
+    DESTROYER = 3;
+    CARRIER = 4;
+    DREADNOUGHT = 5;
+  }
+  optional ClassType Class = 4;
+  optional int32 size = 5;
+  optional bool armed_status = 6;
+  message Officer {
+    optional string first_name = 1;
+    optional string last_name = 2;
+    optional string rank = 3;
+  }
+  repeated Officer officers = 7;
+}
+
+message Coordinate {
+  optional double right_ascension_hours = 1;
+  optional double right_ascension_minutes = 2;
+  optional double right_ascension_seconds = 3;
+  optional double declination_degrees = 4;
+  optional double declination_minutes = 5;
+  optional double declination_seconds = 6;
+}
+
+message RequestedSpaceship {
+  optional Coordinate coordinate = 1;
+  repeated Spaceship spaceship = 2;
+}
+
+message Spaceships {
+  repeated Spaceship spaceship = 1;
+}
+
+message SpaceshipLocationDatabase {
+  repeated RequestedSpaceship requestedspaceship = 1;
+}
+
+message StringSpaceshipsRepresentation {
+  optional string spaceships = 1; 
+}
+
+// message Empty {
+
+// }
+
+service LocatedSpaceship {
+  rpc GetCoordinate(Coordinate) returns (stream Spaceship) {}
+}
