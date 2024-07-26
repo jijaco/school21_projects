@@ -1,0 +1,5 @@
+[
+  "test_mul_perf.py::test_matrix_multiply_time",
+  "test_mul_perf.py::test_matrix_multiply_time_1",
+  "test_mul_perf.py::test_matrix_multiply_time_2"
+]

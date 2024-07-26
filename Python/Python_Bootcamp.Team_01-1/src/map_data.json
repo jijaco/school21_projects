@@ -1,0 +1,75 @@
+{
+    "start_location": "Neon Gate",
+    "locations": [
+        {
+            "name": "Neon Gate",
+            "description": "Вы стоите у входа в город, освещенный неоновыми вывесками и футуристическими билбордами. Впереди виднеются небоскребы и шумная улица.",
+            "directions": {
+                "north": "Cyber Street"
+            }
+        },
+        {
+            "name": "Cyber Street",
+            "description": "Главная улица города, наполненная хмурым светом неона и толпами людей. В воздухе витает запах химикатов и выхлопных газов.",
+            "directions": {
+                "south": "Neon Gate",
+                "north": "Tech Market",
+                "east": "Back Alley"
+            }
+        },
+        {
+            "name": "Tech Market",
+            "description": "Рынок технологий, где можно найти все: от кибернетических имплантатов до запрещенного ПО. Продавцы навязчиво предлагают свои товары.",
+            "directions": {
+                "south": "Cyber Street",
+                "west": "Hackers Den",
+                "north": "Corporate Tower"
+            }
+        },
+        {
+            "name": "Hackers Den",
+            "description": "Скрытое убежище хакеров, где они разрабатывают и тестируют свои программы. Здесь можно найти самую продвинутую технику.",
+            "directions": {
+                "east": "Tech Market"
+            }
+        },
+        {
+            "name": "Corporate Tower",
+            "description": "Высотка корпорации, доминирующая над городом. Внутри роскошные офисы и ультрасовременные системы безопасности.",
+            "directions": {
+                "south": "Tech Market",
+                "north": "Sky Lounge"
+            }
+        },
+        {
+            "name": "Back Alley",
+            "description": "Темный и узкий переулок, где часто происходят нелегальные сделки. Будьте осторожны, здесь небезопасно.",
+            "directions": {
+                "west": "Cyber Street",
+                "east": "Underground Club"
+            }
+        },
+        {
+            "name": "Underground Club",
+            "description": "Подпольный клуб, где собираются андеграундные артисты и киберпанки. Громкая музыка и яркие огни.",
+            "directions": {
+                "west": "Back Alley"
+            }
+        },
+        {
+            "name": "Sky Lounge",
+            "description": "Роскошный лаунж на крыше небоскреба с панорамным видом на город. Здесь можно встретить влиятельных людей.",
+            "directions": {
+                "south": "Corporate Tower",
+                "north": "Roof Top Garden"
+            }
+        },
+        {
+            "name": "Roof Top Garden",
+            "description": "Зеленый сад на крыше здания, оазис спокойствия среди городской суеты. Идеальное место для отдыха.",
+            "directions": {
+                "south": "Sky Lounge"
+            }
+        }
+    ]
+}

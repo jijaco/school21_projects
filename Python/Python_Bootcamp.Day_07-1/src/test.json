@@ -1,0 +1,12 @@
+{
+    "Do you think you are old?": ["Yes", "No", "Not sure"],
+    "What the wheather today?": ["Cloudy", "Rainy", "Snowfall", "Wind with rain"],
+    "Choose from the set of four colours?": ["Blue", "Red", "White", "Pink"],
+    "Choose from the set of four numbers?": [84, 1023, 2077, 2024],
+    "If you would have a child how would you name him?": ["Ryan", "Gosling", "Literally me"],
+    "If i ask you to borrow me some money how much you give?": ["Less then 100", "Between 100 and 1000", "More then 1000"],
+    "How many friends you have?": [0, 0, 0],
+    "What name of your girlfriend?": ["Joi", "Joi", "Joi"],
+    "What kind of pet would you like to have?": ["Dog", "Cat", "Bunny"],
+    "What word you like the most from the given?": ["Cheese", "Home", "Lake"]
+}

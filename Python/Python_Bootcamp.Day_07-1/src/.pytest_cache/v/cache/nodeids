@@ -1,0 +1,9 @@
+[
+  "tests/test_py.py::test_1",
+  "tests/test_py.py::test_2",
+  "tests/test_py.py::test_emptyness_of_file",
+  "tests/test_py.py::test_existence_of_file",
+  "tests/test_py.py::test_invalid_numbers",
+  "tests/test_py.py::test_number_of_health_parametres",
+  "tests/test_py.py::test_number_of_questions"
+]
